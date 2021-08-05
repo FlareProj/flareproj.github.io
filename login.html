@@ -1,12 +1,15 @@
 <button type="button" onclick="logIn()">LOGIN</button>
 
 <script>
-  let password = prompt("Please enter your student code.")
-
   function logIn() {
+    let password = prompt("Please enter your student code.")
+    // Asks student code
+    
     if (password === "41125" || password === "42470") {
       window.location = "/dashboard";
     } else {
       window.location = "/403";
+    }
+    // checks student code
   }
 </script>
