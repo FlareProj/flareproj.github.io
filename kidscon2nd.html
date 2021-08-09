@@ -1,0 +1,18 @@
+<center>
+  <button type="button" onclick="logIn()">Login to KidsCon</button>
+</center>
+
+
+<script>
+  function logIn() {
+    let password = prompt("Please enter your student code.")
+    // Asks student code
+    
+    if (password === "41108" || password === "41142" || password === "41269") {
+      window.location = "/dashboard";
+    } else {
+      window.location = "/403";
+    }
+    // checks student code
+  }
+</script>
